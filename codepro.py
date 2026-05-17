@@ -4,8 +4,6 @@ import hashlib
 import requests
 import subprocess
 
-KEY_URL = "https://raw.githubusercontent.com/ytun9959-design/Auth/refs/heads/main/key.txt"
-
 def get_hwid():
     try:
         model = os.popen("getprop ro.product.model").read().strip()
